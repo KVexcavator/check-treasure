@@ -7,5 +7,6 @@
 # 2) In app_server create two new folders called models and controllers.
 # 3) Move the views and routes folders from the root of the application into the app_server folder.
 # 4) Add the pathes.
+# 5) Splitting controllers from routes
 
 
