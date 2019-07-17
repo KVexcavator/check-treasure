@@ -9,5 +9,6 @@
 # 4) Add the pathes.
 # 5) Splitting controllers from routes
 # 6) Moving the controller out of the routes file
+# Download Bootstrap and add it to the application
 
 
