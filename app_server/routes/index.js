@@ -3,11 +3,12 @@ var router = express.Router();
 
 // define  a named function
 var homepageController = function (req, res, next) {
-    res.render('index', {
-      title: 'Express'
-    });
+  res.render('index', {
+    title: 'Express'
+  });
+};
 
-    /* GET home page. */
-    router.get('/', homepageController);
+/* GET home page. */
+router.get('/', homepageController);
 
-    module.exports = router;
+module.exports = router;
