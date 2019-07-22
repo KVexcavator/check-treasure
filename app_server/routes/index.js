@@ -1,9 +1,15 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-// require main controller file
-var ctrlMain = require('../controllers/main');
+// require  controller files
+var ctrlLocations = require("../controllers/locations");
+var ctrlOthers = require("../controllers/others");
 
-/* GET home page. */
-router.get('/', ctrlMain.index);
+/* locations pages. */
+router.get("/", ctrlLocations.homelist);
+router.get("/location", ctrlLocations.locationInfo);
+router.get("/location/reviw/new", ctrlLocations.addReview);
+
+/*Other pages */
+router.get("/about", ctrlOthers.about);
 
 module.exports = router;
